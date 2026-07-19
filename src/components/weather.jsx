@@ -229,7 +229,7 @@ export default function WeatherDashboard({ city, onBack }) {
                   <Text dimColor>
                     {String(h).padStart(2, '0')}:00
                   </Text>
-                  <Text bold>{Math.round(hTemps[i])}\u00B0</Text>
+                  <Text bold>{Math.round(hTemps[i])}°</Text>
                   <Text>{icon}</Text>
                   {hPrecip[i] > 0 && (
                     <Text dimColor>{hPrecip[i]}%</Text>
@@ -265,9 +265,9 @@ export default function WeatherDashboard({ city, onBack }) {
                   {day}
                 </Text>
                 <Text bold color={tempColor(high)}>
-                  {high}\u00B0
+                  {high}°
                 </Text>
-                <Text dimColor>{low}\u00B0</Text>
+                <Text dimColor>{low}°</Text>
                 <Text>{icon}</Text>
                 {daily.precipitation_probability_max[i] > 0 && (
                   <Text dimColor>

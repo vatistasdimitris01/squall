@@ -1,0 +1,19 @@
+{
+  "name": "squall",
+  "version": "1.0.0",
+  "description": "a sketchy little weather tui",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node dist/cli.mjs",
+    "dev": "node build.mjs && node dist/cli.mjs"
+  },
+  "dependencies": {
+    "ink": "^4.4.0",
+    "ink-text-input": "^5.0.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
+}
